@@ -11,7 +11,7 @@ In order to compile and install imagefs on your system, type the following in th
     make
     make install
 
-Since Imagefs uses `autoconf` you should have not trouble compiling it.
+Since Imagefs uses `autoconf` you should have no trouble compiling it.
 
 ## Usage 
 
