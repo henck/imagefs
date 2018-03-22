@@ -1,0 +1,16 @@
+Imagefs
+Copyright 2002 Alex van Oostenrijk, vanoostenrijk [@] hotmail [.] com
+Distributed under the GPL license.
+
+imagefs allows you to create a file on your hard disk (or any other drive) and treat it as if
+it were a floppy disk.  imagefs lets you copy files onto and delete file from this virtual
+floppy disk, install boot sector code, and display a directory of files on the virtual disk.
+
+imagefs is especially useful for testing bootable software with Bochs.  Instead of being
+forced to copy your files to a diskette every time you want a test run, you can now have
+bochs boot the image file instead.  This saves minutes every time you test.  Plus, you can
+include calls to imagefs in your makefile, thus automating the process.
+
+imagefs was developed for use in the development of the Slikware operating system
+
+For installation instructions, refer to INSTALL.

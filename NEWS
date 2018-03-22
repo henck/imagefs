@@ -1,0 +1,23 @@
+Version 1.02
+------------
+
+Bugfix: when you run 'imagefs add myimage /src/boot/myfile', meaning that you wish to
+add '/src/boot/myfile' to the 'myimage' disk image, imagefs would place the entire
+string '/SRC/BOOT/MYFILE' in the image file's FAT table.  It should have written only
+'MYFILE' there.  Fixed.
+
+
+Version 1.01
+------------
+
+Bugfix: version 1.00 reported (erroneously) that files could not be found when adding them,
+but added them anyway.  This flaw has been fixed.
+
+
+Version 1.00
+____________
+
+Initial release.
+
+
+
