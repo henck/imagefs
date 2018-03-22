@@ -1,9 +1,12 @@
 # imagefs
-imagefs allows you to create a file on your hard disk (or any other drive) and treat it as if it were a floppy disk.  imagefs lets you copy files onto and delete file from this virtual floppy disk, install boot sector code, and display a directory of files on the virtual disk.
+
+imagefs allows you to create a file on your hard disk (or any other drive) and treat it as if it were a floppy disk.  imagefs lets you copy files onto and delete files from this virtual floppy disk, install boot sector code, and display a directory of files on the virtual disk.
+
+imagefs is used in [Independent Software's Toy Operating Development guides](http://www.independent-software.com/writing-your-own-toy-operating-system/) to create image files for the Bochs simulator.
 
 ## Installation
 
-In order to compile and run imagefs, you need the a compatible C++ compiler. The `configure` script will figure out for you if your compiler is compatible enough. 
+In order to compile and run imagefs, you need a compatible C++ compiler. The `configure` script will figure out for you if your compiler is compatible enough. 
 
 In order to compile and install imagefs on your system, type the following in the base directory of the imagefs distribution: 
 
@@ -48,7 +51,7 @@ You can add one or more files to your image with a single command. The syntax is
 
     imagefs.exe <a/add>    <image file name> <file> [more files]
 
-This assumes that you have an empty image ready, created as detailed in paragraph 3. For example, you could run: 
+This assumes that you have an empty image ready, created as detailed above. For example, you could run: 
 
     imagefs c myimage.img 2880
     imagefs a myimage.img file1.dat file2.dat
@@ -82,7 +85,7 @@ will cause imagefs to print:
 
 ### Removing files 
 
-You can remove files from the virtual image using imagefs. This works exactly the same as on a normal diskette under DOS or Windows; the FAT table is updated to reflect the removal of the files. The syntax is: 
+You can also remove files from the virtual image using imagefs. This works exactly the same as on a normal diskette under DOS or Windows; the FAT table is updated to reflect the removal of the files. The syntax is: 
 
     imagefs.exe <r/remove> <image file name> <file> [more files]
 
